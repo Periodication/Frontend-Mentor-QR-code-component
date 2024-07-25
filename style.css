@@ -1,13 +1,25 @@
 :root {
   --clr-neutral-100: white;
-  --clr-accent-300: hsl(212, 45%, 89%)
-  --clr-accent-500: hsl(216, 15%, 48%)
-  --clr-accent-900: hsl(218, 44%, 22%)
+  --clr-accent-300: hsl(212, 45%, 89%);
+  --clr-accent-500: hsl(216, 15%, 48%);
+  --clr-accent-900: hsl(218, 44%, 22%);
 
-  --fw-normal: 400;
+  --fw-regular: 400;
   --fw-bold: 700;
+
+  --font-family: 'Outfit';
+
+  --fs-400: 0.9375rem; /* 15px */
+  --fs-600: 1.375rem; /* 22px */
+
+  --lh-100: 1.2;
+  --lh-300: 1.4;
+
+  --ls-400: normal;
+  --ls-500: 0.2px;
 }
 
+/* Css reset */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -33,3 +45,40 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+
+/* Utility classes */
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+
+.text-accent-300 {
+  color: var(--clr-accent-300);
+}
+
+.text-accent-500 {
+  color: var(--clr-accent-500);
+}
+
+.text-accent-900 {
+  color: var(--clr-accent-900);
+}
+
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+
+.bg-accent-300 {
+  background-color: var(--clr-accent-300);
+}
+
+.bg-accent-500 {
+  background-color: var(--clr-accent-500);
+}
+
+.bg-accent-900 {
+  background-color: var(--clr-accent-900);
+}
+
+.fw-regular { font-weight: var(--fw-regular); }
+.fw-bold { font-weight: var(--fw-bold); }
+/* TODO: Create more utiliy classes */
