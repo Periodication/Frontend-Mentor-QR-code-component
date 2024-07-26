@@ -7,7 +7,7 @@
   --fw-regular: 400;
   --fw-bold: 700;
 
-  --font-family: 'Outfit';
+  --font-family: "Outfit";
 
   --fs-400: 0.9375rem; /* 15px */
   --fs-600: 1.375rem; /* 22px */
@@ -81,4 +81,53 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .fw-regular { font-weight: var(--fw-regular); }
 .fw-bold { font-weight: var(--fw-bold); }
-/* TODO: Create more utiliy classes */
+
+.heading-text-preset {
+  font-size: var(--fs-600);
+  line-height: var(--lh-100);
+  letter-spacing: var(--ls-400);
+}
+
+.body-text-preset {
+  font-size: var(--fs-400);
+  line-height: var(--lh-300);
+  letter-spacing: var(--ls-500);
+}
+
+/* Main styles */
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-size: 1rem;
+}
+
+.container {
+  width: min(85.33333%, 320px);
+  padding: 1rem 1rem 2.5rem 1rem;
+  border-radius: 20px;
+}
+
+.container img {
+  width: 288px;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+
+.bottom-text {
+  padding: 0px 1rem;
+  text-align: center;
+}
+
+.bottom-text h2 {
+  margin-bottom: 1.5rem;
+}
+
+.credits {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
