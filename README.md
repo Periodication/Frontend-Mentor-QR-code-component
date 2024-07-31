@@ -50,6 +50,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   --ls-400: normal;
   --ls-500: 0.2px;
 }
+```
 
 - Utility classes, why they're important and how to set them up.
 ```css
